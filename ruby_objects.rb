@@ -25,24 +25,27 @@ attr_accessor :a, :b
    end
 
  def add()
-   puts"Sum of #{a} and #{b} = " 
-   a + b
- 
+   answer = a + b
+   puts"Sum of #{a} and #{b} = #{answer}" 
+  
  end
 
  def subtract()
-   puts "Difference of #{a} from #{b} = "
-   a - b
+  answer =a - b
+  puts "Difference of #{a} from #{b} = #{answer}"
+ 
  end
 
   def multiply()
-   puts "Multiplying #{a} and #{b} = "
-    a * b
+   answer = a * b
+   puts "Multiplying #{a} and #{b} = #{answer}"
+    
   end
 
   def divide()
-    puts "Dividing #{a} by #{b} = "  
-    a / b
+    answer = a / b
+    puts "Dividing #{a} by #{b} = #{answer}"  
+    
   end
 
 end
@@ -87,16 +90,17 @@ class Elevator
   end
 
   def up
-    if  floor < 10 
+
+    if  @floor < 10 
          puts "You are going up to next floor"
     else 
-       puts "You are on top floor..Can only go down"
+       puts "You are on top floor..Can only go down."
     end
   end
 
   def down
     if @floor <=1 
-      puts "First floor, can only go up"
+      puts "First floor, you can only go up."
     else
      puts "Going down from floor #{@floor}."
    end
